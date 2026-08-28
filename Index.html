@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iniciar sesion</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="login-card">
+		<div class="brand-mark" aria-hidden="true">L</div>
+		<h1>Bienvenido</h1>
+		<p class="subtitle">Ingresa tus datos para continuar</p>
+
+		<form id="loginForm" novalidate>
+			<label for="usuario">Usuario o Gmail</label>
+			<input
+				type="text"
+				id="usuario"
+				name="usuario"
+				placeholder="tuusuario o tucorreo@gmail.com"
+				autocomplete="username"
+				required
+			>
+
+			<label for="contrasena">Contrasena</label>
+			<input
+				type="password"
+				id="contrasena"
+				name="contrasena"
+				placeholder="Escribe tu contrasena"
+				autocomplete="current-password"
+				required
+			>
+
+			<div class="form-options">
+				<label class="remember-me">
+					<input type="checkbox" name="recordarme">
+					<span>Recordarme</span>
+				</label>
+				<a href="#">Olvide mi contrasena</a>
+			</div>
+
+			<button type="submit">Iniciar sesion</button>
+			<p id="formMessage" class="form-message" role="alert" aria-live="polite"></p>
+		</form>
+	</main>
+
+	<script src="java.js"></script>
+</body>
+</html>
